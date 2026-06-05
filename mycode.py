@@ -10,12 +10,18 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
 df = pd.DataFrame(data)
 
 # # Adding new row to df for V2
+#this was not implemented in my case as in the original csv, gf1, was already added
 new_row_loc = {'Name': 'GF1', 'Age': 20, 'City': 'City1'}
 df.loc[len(df.index)] = new_row_loc
 
 # # Adding new row to df for V3
+#this was not implemented in my case as in the original csv, gf1, was already added
 new_row_loc2 = {'Name': 'GF2', 'Age': 30, 'City': 'City2'}
 df.loc[len(df.index)] = new_row_loc2
+
+# # Adding new row to df for original V2
+new_row_loc = {'Name': 'GF10', 'Age': 25, 'City': 'City4'}
+df.loc[len(df.index)] = new_row_loc
 
 # Ensure the "data" directory exists at the root level
 data_dir = 'data'
