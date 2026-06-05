@@ -5,4 +5,6 @@
 5 we do "dvc init" . (this creates .dvc, .dvcignore)
 6. now do S3 mkdir (creates new S3 directory)
 7. Now we do "dvc remote add -d myremote S3" 
-8. next is "dvc add data/"
+8. next is "dvc add data/" and them we add git .ignore and data.dvc
+9. now "dvc commit" and then "dvc push"
+10. Do git add-commit-push to mark this stage as the first version of the data
